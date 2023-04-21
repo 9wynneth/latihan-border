@@ -1,0 +1,112 @@
+<html>
+<head>
+<style>
+
+@font-face {
+	font-family: myFont;
+	src: url('ProductSans-Regular.ttf');
+	font-weight: bold;
+}
+
+div {
+    margin-left:30px;
+	margin-top:30px;
+	padding:10px 20px 10px 20px;
+	width:300px;
+	text-align:center;
+	font-family:myFont;
+	font-size:14pt;
+	background-color:white;
+	color:#222222;
+	font-weight:bold;
+	}
+div#round
+{
+	border: 2px solid gray;
+	border-radius: 15px;
+	background-color: silver;
+}
+
+div#image
+{
+	border-style: none;
+	border-width: 10px;
+	border: 10px solid transparent;
+	border-image: url('img_border.png') 30 round;
+}
+
+div#shadow
+{
+	border: 2px solid navy;
+	background-color: skyblue;
+	box-shadow: 15px -10px 10px gray;
+}
+
+div#textshadow
+{
+	font-size: 18pt;
+	border: 2px solid gray;
+	background-color: aliceblue;
+	text-shadow: 5px 5px 5px gray;
+}
+
+div#translate
+{
+	border: 2px solid blue;
+	background-color: aqua;
+	transform: translate(120px,20px);
+}
+
+div#rotate
+{
+	border: 2px solid yellow;
+	background-color: aqua;
+	transform: rotate(30deg);
+}
+
+div#resize
+{
+	border: 2px solid red;
+	background-color: burlywood;
+	transform: scale(1.5,1.5);
+}
+
+div#skew
+{
+	border: 2px solid navy;
+	background-color: powderblue;
+	transform: skew(10deg,20deg);
+}
+
+</style>
+</head>
+<body>
+	<div id=round> 
+		This is Rounded Recteangle Div
+	</div>
+	<div id=image>
+	    This Div uses image as border
+	</div>
+	<div id=shadow>
+	    This Div uses shadow
+	</div>
+	<div id=textshadow>
+	    This Text uses shadow
+	</div>
+	
+	<div id=translate>
+	    This DIV uses 2D transform (Translate)
+	</div>
+	<div id=rotate>
+	    This DIV uses 2D transform (Rotate)
+	</div>
+	
+	<div id=resize>
+	    This DIV uses 2D transform (Scale)
+	</div>
+	<div id=skew>
+	    This DIV uses 2D transform (Skew)
+	</div>
+</body>
+</html>
+	
